@@ -73,8 +73,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Flutter Demo'),
       ),
-      body: Center(
-          child: ListView.builder(
+      body:  ListView.builder(
         itemCount: 9,
         itemBuilder: (context, index) {
           final modulo = modulos[index];
@@ -86,7 +85,7 @@ class _HomePageState extends State<HomePage> {
             Activities: modulo['atividades'], // Passa o número de atividades
           );
         },
-      )),
+      ),
       bottomNavigationBar: NavigationBar(
         selectedIndex: selectedIndex,
         onDestinationSelected: (index) {
