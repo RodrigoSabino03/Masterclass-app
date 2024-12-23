@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CardWidget extends StatefulWidget {
   final String Title;
@@ -30,9 +31,8 @@ class _CardWidgetState extends State<CardWidget> {
           borderRadius: BorderRadius.circular(16),
         ),
         padding: EdgeInsets.all(12),
-        margin: EdgeInsets.only(bottom: 10, top: 10),
+        margin: EdgeInsets.all(10),
         height: 200,
-        width: 380,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -56,7 +56,7 @@ class _CardWidgetState extends State<CardWidget> {
                 Row(
                   spacing: 4,
                   children: [
-                    Icon(Icons.rocket_launch_rounded),
+                    FaIcon(FontAwesomeIcons.github),
                     Text("Acessar código fonte"),
                   ],
                 ),
